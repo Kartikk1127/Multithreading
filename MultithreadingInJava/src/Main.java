@@ -33,22 +33,35 @@ public class Main {
 //
 //        System.out.println("Main is exiting")
 
+//        Thread thread = new Thread(()->{
+//            try{
+//                Thread.sleep(1);
+//                for(int i=10000;i>0;i--);
+//            }catch (InterruptedException e){
+//                e.printStackTrace();
+//            }
+//        }, "States");
+//
+//        thread.start();
+//
+//        while (true){
+//            Thread.State state = thread.getState();
+//            System.out.println(state);
+//            if(state== Thread.State.TERMINATED) break;
+//        }
+
         Thread thread = new Thread(()->{
-            try{
-                Thread.sleep(1);
-                for(int i=10000;i>0;i--);
-            }catch (InterruptedException e){
-                e.printStackTrace();
-            }
-        }, "States");
+            System.out.println(Thread.currentThread());
+        }, "Our thread");
 
         thread.start();
 
-        while (true){
-            Thread.State state = thread.getState();
-            System.out.println(state);
-            if(state== Thread.State.TERMINATED) break;
+        try {
+            thread.join();
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
         }
 
+        System.out.println("Main is exiting");
     }
 }
