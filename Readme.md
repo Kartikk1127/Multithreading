@@ -70,3 +70,6 @@ Imagine you're at a restaurant kitchen:
 
 -> In java, multithreading is the concurrent execution of two or more threads to maximize the utilization of the CPU. Java's multithreading capabilities are part of the java.lang package, making it easy to implement concurrent execution.  
 -> Java supports multithreading through its **java.lang.Thread** class and **java.lang.Runnable** interface.
+
+## Important
+1. To create a new thread in Java, you can either extend the Thread class or implement the Runnable interface
