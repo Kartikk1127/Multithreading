@@ -5,8 +5,8 @@ public class Test {
 
         World world = new World();
 //        world.run();
-        Thread t1 = new Thread(world);
-        t1.start();
+        Thread t1 = new Thread(world); //NEW state of thread
+        t1.start(); //RUNNABLE
 
         for(; ;){
             System.out.println(Thread.currentThread().getName());

@@ -73,3 +73,11 @@ Imagine you're at a restaurant kitchen:
 
 ## Important
 1. To create a new thread in Java, you can either extend the Thread class or implement the Runnable interface
+
+## Lifecycle of Thread
+The lifecycle of a thread in Java consists of several states, which a thread can move through during its execution.
+1. **New :** A thread is in this state when it is created but not yet started.
+2. **Runnable :** After the start method is called, the thread becomes runnable. It's ready to run and is waiting for CPU time.
+3. **Running :** The thread is in this state when it is executing.
+4. **Blocked/Waiting :** A thread is in this state when it is waiting for a resource or for another thread to perform an action.
+5. **Terminated :** A thread is in this state when it has finished executing.
