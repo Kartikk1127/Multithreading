@@ -85,3 +85,4 @@ The lifecycle of a thread in Java consists of several states, which a thread can
 #### When to use Thread and Runnable?
 If a class is already extending another class, in that case extending Thread class is not possible and hence implementing Runnable interface is the solution.
 For any other scenario either extending Thread class or implementing Runnable interface is fine.
+
