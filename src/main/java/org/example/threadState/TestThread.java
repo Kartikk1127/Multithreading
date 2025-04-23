@@ -1,4 +1,4 @@
-package org.example;
+package org.example.threadState;
 
 //this example focuses on the join method of the thread which can help us in knowing when a thread has finished executing.
 public class TestThread extends Thread{

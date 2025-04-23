@@ -1,4 +1,4 @@
-package org.example;
+package org.example.threads;
 
 //We can also set the priority of threads as to which thread we want to execute first.
 //By default, the min value = 1, max value = 10 and normal value = 5

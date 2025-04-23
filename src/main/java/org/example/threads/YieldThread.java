@@ -1,4 +1,4 @@
-package org.example;
+package org.example.threads;
 
 //Thread.yield() is a static method in Java used to hint to the thread scheduler that the current thread is willing to pause and let other threads of the same or higher priority run.
 //The current thread gives others a chance to execute.

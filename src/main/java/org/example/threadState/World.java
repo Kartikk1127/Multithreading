@@ -1,4 +1,4 @@
-package org.example;
+package org.example.threadState;
 
 /*public class World extends Thread{
     @Override

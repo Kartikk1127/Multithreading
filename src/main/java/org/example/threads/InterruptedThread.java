@@ -1,4 +1,4 @@
-package org.example;
+package org.example.threads;
 //below is an example of the interrupted exception that is thrown by a thread
 public class InterruptedThread extends Thread{
 

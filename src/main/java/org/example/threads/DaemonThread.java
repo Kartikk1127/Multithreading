@@ -1,4 +1,4 @@
-package org.example;
+package org.example.threads;
 /*
 * 1. A daemon thread is a background thread that provides services to user threads. Think of it like a helper thread that runs in the background and dies automatically when all user threads(like main) are done.
 * 2. These are like garbage collector.
