@@ -10,14 +10,20 @@ public class DaemonThread extends Thread{
     @Override
     public void run() {
         while(true){
-            System.out.println("Hello world!");
+            System.out.println(Thread.currentThread().isDaemon() + "Hello world!");
         }
     }
 
     public static void main(String[] args) {
+        // in this below example, since the user threads keeps on executing therefore the daemon thread also stays alive. Provided the user thread had finished executing there was no chance for the JVM to stay alive and hence the  daemon thread.
+
         DaemonThread t1 = new DaemonThread();
+        DaemonThread t2 = new DaemonThread();
+        //t1 is not a daemon thread yet
         t1.setDaemon(true);
-        t1.start(); //this is not a daemon thread yet
+        //t1 is now a daemon thread
+        t2.start(); //t2 is not a daemon thread
+        t1.start();
         System.out.println("Main done");
     }
 }
