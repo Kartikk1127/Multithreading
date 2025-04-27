@@ -1,4 +1,4 @@
-package org.example.synchronization.extrinsic;
+package org.example.synchronization.intrinsic;
 
 public class BankAccount {
     private int balance = 100;

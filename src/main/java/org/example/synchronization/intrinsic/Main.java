@@ -1,4 +1,4 @@
-package org.example.synchronization.extrinsic;
+package org.example.synchronization.intrinsic;
 
 //this is an example where a particular thread when acquires a lock, it might not be able to release the lock due to some problem.
 //this will lead to another thread keep waiting which is not good for our system.
