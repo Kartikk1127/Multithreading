@@ -26,6 +26,7 @@ public class ReentrantExample {
     }
 
     public void innerMethod(){
+        //this line reacquires lock on the current thread, is possible in case of reentrant locks else would have been a deadlock condition.
         lock.lock();
         try {
             System.out.println(Thread.currentThread().getName());
